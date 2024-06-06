@@ -1,0 +1,74 @@
+@use 'custom' as *;
+@use 'components/typography' as *;
+
+main{
+  margin-top: 1rem;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.my-border{
+    
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    padding: 0.25rem;
+    border-radius: 0.375rem;
+    
+}
+#name:focus, #last-name:focus, #exampleFormControlInput1:focus, textarea:focus, .my-border__focus{
+  background-color: $secondary !important;
+}
+#name:hover, #last-name:hover, #exampleFormControlInput1:hover, textarea:hover, .my-border:hover, #flexCheckDefault:hover{
+  background-color: $secondary !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.query-section p{
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+.margin-b{
+  margin-bottom: 0.5rem;
+}
+.border-error{
+  border: 1px solid $red-cust;
+}
+.custom-checkbox {
+    // Override the variables within this scope
+    $component-active-color: $primary;
+    $component-active-bg: $white;
+    $input-btn-border-width: 2px;
+
+    // Apply the Bootstrap checkbox styles to this custom class
+    .form-check-input {
+      &:checked {
+        background-color: $component-active-bg;
+        border-color: $component-active-color;
+        border: 2px solid $primary;
+      }
+    }
+  }
+  .form-check .form-check-input{
+    margin-top: 1rem;
+  }
+  @media screen and (min-width: 434px) {
+  .form-check .form-check-input{
+    margin-top: .25rem;
+  }
+  }
+  @media screen and (min-width: 768px) {
+    .my-form{
+      margin-bottom: 3rem;
+    }
+    .margin-b{
+      margin-bottom: 0px;
+    }
+    main{
+      margin: 2rem 0 3rem 0;
+    }
+  }
+  @media screen and (min-width: 913px) {
+    form{
+      width: 50%;
+    }
+    .my-border{
+      width: 50%;
+    }
+  }

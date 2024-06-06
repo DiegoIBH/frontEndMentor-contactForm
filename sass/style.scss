@@ -1,0 +1,8 @@
+//Call all other scss files for compiling
+@use 'custom';
+
+@use 'components/buttons';
+@use 'components/typography';
+
+@use 'form';
+@use 'spam-card';

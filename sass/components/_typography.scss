@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+body{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: $green-200;
+    color: rgb(25, 24, 24);
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+form{
+    border-radius: 0.75rem;
+    margin-top: 2rem;
+    h1{
+        color: hsl(185, 24%, 22%);
+        font-weight: 700;
+        
+    }
+    .label{
+        font-size: 1rem;
+    }
+    p{
+        padding: 0;
+    }
+}

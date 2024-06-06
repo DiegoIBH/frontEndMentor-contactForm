@@ -1,0 +1,12 @@
+//Call custom bootstrap variables and add error and sucess message styling
+@use 'custom' as *;
+
+.spam-card {
+    background-color: $gray-900cust;
+    border-radius: 0.75rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-top: 1rem;
+    width: 80%;
+}

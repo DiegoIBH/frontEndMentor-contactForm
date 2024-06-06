@@ -1,0 +1,29 @@
+//Theme colors personalized variables
+$green-200:  hsl(148, 38%, 91%);
+$red-cust: hsl(0, 66%, 56%);
+$green-600:    hsl(169, 82%, 27%);
+$gray-500cust: hsl(186, 15%, 59%);
+$gray-900cust: hsl(187, 24%, 22%);
+
+//white and black colors
+$white:    #fff ;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$black:    #000;
+//Setting theme colors as primary and secondary
+$primary: $green-600; 
+$secondary: $green-200;
+//Form personalized variables
+$form-check-input-checked-color-custom: $primary;
+$form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color-custom}'/></svg>") !default;
+$focus-ring-box-shadow: none;
+//Import Bootstrap scss files after the changed variables so the changes are applied
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
