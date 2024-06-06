@@ -51,8 +51,8 @@ $(function(){
             $("#emailError").html("Please enter an email address");
             $("#exampleFormControlInput1").addClass("border-error");
             hasError = true;
-        } else if(emailValue.indexOf("@") == -1){
-            $("#emailError").html("Please enter a valid email address");
+        } else if(emailValue.indexOf("@") == -1 || emailValue.indexOf(".") == -1){
+            $("#emailError").html("Please enter a valid email address that includes at least one '@' and one '.'");
             $("#exampleFormControlInput1").addClass("border-error");
             hasError = true;
         };
